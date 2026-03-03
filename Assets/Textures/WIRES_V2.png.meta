@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 38c359555df0e2348b7a6b24fd8d11b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2631857927535601670
+    second: WIRES_V2_0
+  - first:
+      213: -6207156152256804939
+    second: WIRES_V2_1
+  - first:
+      213: 3861186813214088011
+    second: WIRES_V2_2
+  - first:
+      213: -7503782417358744431
+    second: WIRES_V2_3
+  - first:
+      213: 430374282040717964
+    second: WIRES_V2_4
+  - first:
+      213: 7217940152415474973
+    second: WIRES_V2_5
+  - first:
+      213: 7244571163667643129
+    second: WIRES_V2_6
+  - first:
+      213: -8979391702795241465
+    second: WIRES_V2_7
+  - first:
+      213: 2435084340112423900
+    second: WIRES_V2_8
+  - first:
+      213: -8019415689837552353
+    second: WIRES_V2_9
+  - first:
+      213: 5094317536540485314
+    second: WIRES_V2_10
+  - first:
+      213: -8127177423065275842
+    second: WIRES_V2_11
+  - first:
+      213: 1849811736792940012
+    second: WIRES_V2_12
+  - first:
+      213: -5266269811064943825
+    second: WIRES_V2_13
+  - first:
+      213: -8269222519709120135
+    second: WIRES_V2_14
+  - first:
+      213: 446101804409063701
+    second: WIRES_V2_15
+  - first:
+      213: 6131828473568038932
+    second: WIRES_V2_16
+  - first:
+      213: -5859306075161564391
+    second: WIRES_V2_17
+  - first:
+      213: -650187413189061260
+    second: WIRES_V2_18
+  - first:
+      213: 3378703227115901599
+    second: WIRES_V2_19
+  - first:
+      213: 3103514222681164746
+    second: WIRES_V2_20
+  - first:
+      213: -6668519749190272381
+    second: WIRES_V2_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WIRES_V2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 529
+        width: 161
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7d1f9b823c97bd0800000000000000
+      internalID: -2631857927535601670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 479
+        width: 62
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b74a5fcd50cbd9a0800000000000000
+      internalID: -6207156152256804939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_2
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 529
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b5c0df2f0b59530800000000000000
+      internalID: 3861186813214088011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_3
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 479
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194928de5a53dd790800000000000000
+      internalID: -7503782417358744431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_4
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 529
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c823089112ff8f500800000000000000
+      internalID: 430374282040717964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_5
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 529
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15d0ca83564b2460800000000000000
+      internalID: 7217940152415474973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 111
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fab2780713e98460800000000000000
+      internalID: 7244571163667643129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_7
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 159
+        width: 112
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708bcc732dac26380800000000000000
+      internalID: -8979391702795241465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_8
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 369
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb74824e482bc120800000000000000
+      internalID: 2435084340112423900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_9
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 319
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1dd9053bef45b090800000000000000
+      internalID: -8019415689837552353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 209
+        width: 112
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6e9820fc6a2b640800000000000000
+      internalID: 5094317536540485314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_11
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 369
+        width: 161
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32ae9f7137763f80800000000000000
+      internalID: -8127177423065275842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 161
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced34e059f9dba910800000000000000
+      internalID: 1849811736792940012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 209
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b4c1c32837ae6b0800000000000000
+      internalID: -5266269811064943825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_14
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 159
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979c3183ee1dd3d80800000000000000
+      internalID: -8269222519709120135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_15
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 209
+        width: 111
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51986714a3fd03600800000000000000
+      internalID: 446101804409063701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41016a64281a81550800000000000000
+      internalID: 6131828473568038932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_17
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91be4b72b209faea0800000000000000
+      internalID: -5859306075161564391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_18
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 49
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4759f671ef11af6f0800000000000000
+      internalID: -650187413189061260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_19
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 0
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9295b51fa093ee20800000000000000
+      internalID: 3378703227115901599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_20
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 0
+        width: 62
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb884e0eb5e11b20800000000000000
+      internalID: 3103514222681164746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WIRES_V2_21
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 49
+        width: 161
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a36d39e98a473a0800000000000000
+      internalID: -6668519749190272381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WIRES_V2_0: -2631857927535601670
+      WIRES_V2_1: -6207156152256804939
+      WIRES_V2_10: 5094317536540485314
+      WIRES_V2_11: -8127177423065275842
+      WIRES_V2_12: 1849811736792940012
+      WIRES_V2_13: -5266269811064943825
+      WIRES_V2_14: -8269222519709120135
+      WIRES_V2_15: 446101804409063701
+      WIRES_V2_16: 6131828473568038932
+      WIRES_V2_17: -5859306075161564391
+      WIRES_V2_18: -650187413189061260
+      WIRES_V2_19: 3378703227115901599
+      WIRES_V2_2: 3861186813214088011
+      WIRES_V2_20: 3103514222681164746
+      WIRES_V2_21: -6668519749190272381
+      WIRES_V2_3: -7503782417358744431
+      WIRES_V2_4: 430374282040717964
+      WIRES_V2_5: 7217940152415474973
+      WIRES_V2_6: 7244571163667643129
+      WIRES_V2_7: -8979391702795241465
+      WIRES_V2_8: 2435084340112423900
+      WIRES_V2_9: -8019415689837552353
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
