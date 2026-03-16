@@ -10,7 +10,6 @@ public class WireSearh : MonoBehaviour
     [SerializeField] Tilemap tileMap;
     [SerializeField] PlaceScript place;
     private Tile CurrentTile;
-    
     Vector3Int PositionEnd;
 
     void Update()
@@ -20,7 +19,7 @@ public class WireSearh : MonoBehaviour
         {
 
             if (PositionEnd != place.GetTilePositionFromMouse()&& Input.GetMouseButton(0))
-            {
+
 
 
                 if (place.GetTilePositionFromMouse().x > PositionEnd.x)
@@ -34,6 +33,7 @@ public class WireSearh : MonoBehaviour
                 else if (place.GetTilePositionFromMouse().y < PositionEnd.y)
                 {
                     Spawn(tileMap, tile[0], PositionEnd, 270);
+
                 }
                 else if (place.GetTilePositionFromMouse().y > PositionEnd.y)
                 {
@@ -58,7 +58,5 @@ public class WireSearh : MonoBehaviour
         map.SetTransformMatrix(position, matrix);
 
     }
-
-
 
 }

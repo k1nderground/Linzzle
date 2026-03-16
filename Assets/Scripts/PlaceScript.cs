@@ -9,6 +9,7 @@ public class PlaceScript : MonoBehaviour
     public static int tileid;
     public TileBase[] tiles;
     public TileBase CurrentTile;
+    [SerializeField] PhysicsSystem_Script physicScript;
 
 
     public int xmin;
@@ -25,21 +26,28 @@ public class PlaceScript : MonoBehaviour
 
         if (CurrentTile!=null && isInArea() && MoneySystem.isAvailable())
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Vector3Int cellpos = GetTilePositionFromMouse();
 
-                PlaceTileAtMousePosition(GetTilePositionFromMouse(), CurrentTile, tileMap);
-
-                if(tileid != 7) { tileid = 0; }
-               
+            if(tileid==7 || tileid==8){
+                if(Input.GetMouseButton(0)){
+                    Vector3Int cellpos =  GetTilePositionFromMouse();
+                    PlaceTileAtMousePosition(GetTilePositionFromMouse(),CurrentTile,tileMap);
+                }
+                if(Input.GetMouseButtonUp(0)){
+                    tileid = 0;
+                }
             }
-            if(tileid == 7&& Input.GetMouseButtonUp(0))
-            {
+            else{
+            Vector3Int cellpos =  GetTilePositionFromMouse();
+
+                PlaceTileAtMousePosition(GetTilePositionFromMouse(),CurrentTile,tileMap);
                 tileid = 0;
             }
-            
- 
+            physicScript.RecalculateSystem();
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            Debug.Log(GetTilePositionFromMouse());
+
         }
         //if (Input.GetMouseButtonDown(1))
         //{
