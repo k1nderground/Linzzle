@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class WireSearh : MonoBehaviour
+public class WireSpawn : MonoBehaviour
 {
     [SerializeField] Tile[] tile;
     //[SerializeField] Grid grid;
@@ -18,8 +18,17 @@ public class WireSearh : MonoBehaviour
         if (place.CurrentTile != null && place.tiles[PlaceScript.tileid] == tile[0] && MoneySystem.isAvailable())
         {
 
+<<<<<<< Updated upstream:Assets/Scripts/Wire/WireSearhBlock.cs
             if (PositionEnd != place.GetTilePositionFromMouse() && Input.GetMouseButton(0))
             {
+=======
+
+            if (PositionEnd != place.GetTilePositionFromMouse() && Input.GetMouseButton(0))
+            {
+
+
+
+>>>>>>> Stashed changes:Assets/Scripts/Wire/WireSpawn.cs
 
                 if (place.GetTilePositionFromMouse().x > PositionEnd.x)
                 {
@@ -54,7 +63,11 @@ public class WireSearh : MonoBehaviour
         map.SetTransformMatrix(position, matrix);
 
     }
+<<<<<<< Updated upstream:Assets/Scripts/Wire/WireSearhBlock.cs
 }
 
     
 
+=======
+}
+>>>>>>> Stashed changes:Assets/Scripts/Wire/WireSpawn.cs

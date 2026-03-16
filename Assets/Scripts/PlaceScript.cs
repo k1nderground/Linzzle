@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -17,20 +16,21 @@ public class PlaceScript : MonoBehaviour
     public int ymin;
     public int ymax;
 
-   
+
 
     void Update()
     {
         CurrentTile = tiles[tileid];
         if (Input.GetKeyDown(KeyCode.Q)) { tileid = 0; }
 
-        if (CurrentTile!=null && isInArea() && MoneySystem.isAvailable())
+        if (CurrentTile != null && isInArea() && MoneySystem.isAvailable())
         {
             if (Input.GetMouseButtonDown(0))
             {
                 Vector3Int cellpos = GetTilePositionFromMouse();
 
                 PlaceTileAtMousePosition(GetTilePositionFromMouse(), CurrentTile, tileMap);
+<<<<<<< Updated upstream
                 if (tileid != 7 && tileid != 8) { 
                     tileid = 0; 
                 }
@@ -38,6 +38,17 @@ public class PlaceScript : MonoBehaviour
             if ((tileid == 7|| tileid == 8) && Input.GetMouseButtonUp(0))
             {
                tileid = 0;
+=======
+                if (tileid != 7 && tileid != 8)
+                {
+                    tileid = 0;
+                }
+            }
+            if ((tileid == 7 || tileid == 8) && Input.GetMouseButtonUp(0))
+            {
+                tileid = 0;
+
+>>>>>>> Stashed changes
             }
 
             physicScript.RecalculateSystem();
@@ -50,10 +61,7 @@ public class PlaceScript : MonoBehaviour
             Debug.Log(GetTilePositionFromMouse());
 
         }
-        //if (Input.GetMouseButtonDown(1))
-        //{
-        //    Debug.Log(GetTilePositionFromMouse());
-        //}
+
     }
 
     public Vector3Int GetTilePositionFromMouse()
@@ -62,7 +70,7 @@ public class PlaceScript : MonoBehaviour
         return grid.WorldToCell(mousePosition);
     }
 
-    public void PlaceTileAtMousePosition(Vector3Int p,TileBase tile,Tilemap Map)
+    public void PlaceTileAtMousePosition(Vector3Int p, TileBase tile, Tilemap Map)
     {
         if (Map.GetTile(p) == null)
         {

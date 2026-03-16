@@ -3778,7 +3778,7 @@ MonoBehaviour:
   isActive: 0
   timer: 0
   isStart: 1
-  debug: 0
+  debug: 1
 --- !u!1 &1038268780
 GameObject:
   m_ObjectHideFlags: 0
