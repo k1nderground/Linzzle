@@ -11,8 +11,19 @@ public class ReworkedCameraSystem : MonoBehaviour
     public float bottomBorder = 120f;
 
     public float verticalDelay = 0.25f;
-
     float verticalTimer = 0;
+
+    [SerializeField] float minX;
+    [SerializeField] float maxX;
+    [SerializeField] float minY;
+    [SerializeField] float maxY;
+
+    Camera cam;
+
+    void Start()
+    {
+        cam = Camera.main;
+    }
 
     void Update()
     {
@@ -21,19 +32,16 @@ public class ReworkedCameraSystem : MonoBehaviour
 
         Vector3 move = Vector3.zero;
 
-        // LEFT
         if (Input.mousePosition.x <= leftBorder)
         {
             move.x = -1;
         }
 
-        // RIGHT
         if (Input.mousePosition.x >= Screen.width - rightBorder)
         {
             move.x = 1;
         }
 
-        // DOWN
         if (Input.mousePosition.y <= bottomBorder)
         {
             verticalTimer += Time.deltaTime;
@@ -52,7 +60,20 @@ public class ReworkedCameraSystem : MonoBehaviour
         {
             verticalTimer = 0;
         }
-
         transform.position += move * speed * Time.deltaTime;
+
+        CameraBorder();
+    }
+
+    void CameraBorder()
+    {
+        Vector3 pos = transform.position;
+        float vertExtent = cam.orthographicSize;
+        float horzExtent = vertExtent * cam.aspect;
+
+        pos.x = Mathf.Clamp(pos.x, minX + horzExtent, maxX - horzExtent);
+        pos.y = Mathf.Clamp(pos.y, minY + vertExtent, maxY - vertExtent);
+
+        transform.position = pos;
     }
 }

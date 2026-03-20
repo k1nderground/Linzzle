@@ -1,0 +1,21 @@
+{
+    "start": [
+        {
+            "text": "nothing here",
+            "sprite": "Coffee"
+        }
+    ],
+    "win": [
+    {
+      "text": "nothing here",
+      "sprite": "Like"
+    }
+  ],
+
+    "lose": [
+    {
+      "text": "nothing here",
+      "sprite": "Blya"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ public class LevelButtons_Script : MonoBehaviour
 {
     [Header("ScriptConnections")]
     [SerializeField] PhysicsSystem_Script physicScript;
+    [SerializeField] LevelManager levelManager;
 
     [Header("OtherStuff")]
     public AudioSource src;
@@ -20,7 +21,7 @@ public class LevelButtons_Script : MonoBehaviour
 
     void Start(){
         InfoBlock.SetActive(false);
-        LevelInfo.text = "Уровень " + physicScript.CurrentLevel; 
+        LevelInfo.text = "Уровень " + levelManager.CurrentLevel; 
 
         Tab1Info.text = physicScript.Type1Amount + " запросов типа 1";
         Tab2Info.text = physicScript.Type2Amount + " запросов типа 2";

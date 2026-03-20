@@ -9,6 +9,9 @@ public class TileInfoScript : MonoBehaviour
     [SerializeField] TileBase S;
     [SerializeField] GameObject ExtraTileInfoBlock;
     [SerializeField] GameObject TileInfoBlock;
+    [SerializeField] GameObject ExBu;
+    [SerializeField] GameObject DeBu;
+
     private GameObject currentActiveInfoBlock;
     private Vector3Int lastTilePosition;
     private bool isInfoBlockActive = false;
@@ -51,23 +54,39 @@ public class TileInfoScript : MonoBehaviour
         
         if (clickedTile != null)
         {
-            // Сохраняем позицию тайла
             lastTilePosition = tp;
             isInfoBlockActive = true;
             
-            // Определяем какой блок показывать
             bool isSpecialTile = (clickedTile == FE || clickedTile == BE || clickedTile == S);
             currentActiveInfoBlock = isSpecialTile ? TileInfoBlock : ExtraTileInfoBlock;
             GameObject inactiveBlock = isSpecialTile ? ExtraTileInfoBlock : TileInfoBlock;
+
+            
             
             TileData data = GetTileName();
-            // Позиционируем и показываем нужный блок
             DefText.text = data.name;
             ExtraText.text = data.name;
             DefDescText.text = data.desc;
             ExtraDecsText.text = data.desc;
             PositionBlockAtTile(currentActiveInfoBlock, tp);
             currentActiveInfoBlock.SetActive(true);
+            if (isSpecialTile)
+            {
+                DeBu.SetActive(true);
+                if (clickedTile == S)
+                {
+                    DeBu.SetActive(false);
+                }
+            }
+            else
+            {
+                ExBu.SetActive(true);
+                if (data.name == "Электро щиток")
+                {
+                    ExBu.SetActive(false);
+                }
+            }
+            
             inactiveBlock.SetActive(false);
         }
         else
@@ -86,13 +105,8 @@ public class TileInfoScript : MonoBehaviour
 
     void PositionBlockAtTile(GameObject block, Vector3Int tilePos)
     {
-        // Конвертируем позицию тайла в мировые координаты
         Vector3 worldPos = pscr.tileMap.GetCellCenterWorld(tilePos);
-        
-        // Конвертируем мировые координаты в экранные
         Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPos);
-        
-        // Применяем к UI элементу
         block.GetComponent<RectTransform>().position = screenPos;
     }
 
@@ -158,9 +172,9 @@ public class TileInfoScript : MonoBehaviour
 
     switch(j)
     {
-        case 0: data.desc = "Считок-бурмалдок" ; data.name = "Считок"; break;
+        case 0: data.desc = "Подает электричество ко всем модулям" ; data.name = "Электро щиток"; break;
         case 1: data.desc = "Объем памяти: 1тБ\nПовышает температуру на 60" ; data.name = "HDD"; break;
-        case 2: data.desc = "Объем памяти: 8гБ\nПовышает температуру на 40" ; data.name =  "RAM"; break;
+        case 2: data.desc = "Объем памяти: 32гБ\nПовышает температуру на 40" ; data.name =  "RAM"; break;
         case 3: data.desc = "Понижает температруру на 20" ; data.name =  "Кулер"; break;
         case 4: data.desc = "Обрабатывает 1000 запросов" ; data.name = "GET Обработчик"; break;
         case 5: data.desc = "Обрабатывает 1000 запросов" ; data.name = "POST Обработчик"; break;

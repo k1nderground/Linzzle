@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4834168099376517404}
   - component: {fileID: 1803503099042509783}
+  - component: {fileID: 2689681970273647067}
   m_Layer: 0
   m_Name: PhysicsSystem
   m_TagString: Untagged
@@ -44,3 +45,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f190eab5b05af4067a6def7a57ed0bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  blocks: {fileID: 0}
+  Server: {fileID: 0}
+  Hdd: {fileID: 0}
+  Ram: {fileID: 0}
+  Cooler: {fileID: 0}
+  Tab1: {fileID: 0}
+  Tab2: {fileID: 0}
+  Tab3: {fileID: 0}
+  ServerPostion: {x: 0, y: 0, z: 0}
+  MemoryAmount: 0
+  RamAmount: 0
+  Temperature: 0
+  CoolantAmount: 0
+  Type1Endure: 0
+  Type2Endure: 0
+  Type3Endure: 0
+  Timer1: 0
+  RamNeed: 0
+  MemoryNeed: 0
+  Type1Amount: 0
+  Type2Amount: 0
+  Type3Amount: 0
+  isAttacking: 0
+  isLose: 0
+  isWin: 0
+  isBackGood: 0
+  isFrontGood: 0
+--- !u!114 &2689681970273647067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6141570129400471314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140c2efe40f4407c9ff78f063fde247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  CurrentLevel: 
+  BeautyLevel: 
+  curlevel: 0
