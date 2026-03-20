@@ -42,6 +42,12 @@ public class DialogueScript : MonoBehaviour
 
     void Start()
     {
+        startDi[13] = "$name = $_POST['name'];\n\n" +
+        "if ($name == \"\") {\n" +
+        "    echo \"Имя не указано\";\n" +
+        "} else {\n" +
+        "    echo \"Привет, \" . $name;\n" +
+        "}";
         DialogueBox.SetActive(false);
         
         // Проверяем наличие необходимых компонентов

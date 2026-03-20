@@ -7,4 +7,12 @@ public class LevelSelect_Script : MonoBehaviour
     {
         SceneManager.LoadScene("Level_1");
     }
+    public void GoToLevelTwo()
+    {
+        SceneManager.LoadScene("Level_2");
+    }
+    public void GoToLevelThree()
+    {
+        SceneManager.LoadScene("Level_3");
+    }
 }
