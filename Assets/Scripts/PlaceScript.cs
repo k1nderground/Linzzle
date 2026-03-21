@@ -62,11 +62,12 @@ public class PlaceScript : MonoBehaviour
     {
         if (Map.GetTile(p) == null)
         {
-            MoneySystem.buy(tileid);
+            tscr.HideInfoBlocks();// Скрываем информационные блоки после установки тайла
             Map.SetTile(p, tile);
-            
-            // Скрываем информационные блоки после установки тайла
-            tscr.HideInfoBlocks();
+            if (Map.GetTile(p) != null)
+            {
+                MoneySystem.buy(tileid);
+            }
         }
     }
 

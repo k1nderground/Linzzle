@@ -111,8 +111,7 @@ public class WireSpawn : MonoBehaviour
     {
         Vector3Int direction = currentPos - lastPlacedPosition;
 
-        if (Mathf.Abs(direction.x) + Mathf.Abs(direction.y) == 1)
-        {
+        
             int wireRotation = GetRotationFromDirection(direction);
 
             if (lastDirection != wireRotation && lastPlacedPosition != currentPos)
@@ -131,7 +130,7 @@ public class WireSpawn : MonoBehaviour
 
             lastPlacedPosition = currentPos;
             lastDirection = wireRotation;
-        }
+        
     }
 
     void FinishDrawingLine()
@@ -270,39 +269,41 @@ public class WireSpawn : MonoBehaviour
         return 0;
     }
 
-    void PlaceCornerWire(Vector3Int position, int fromDirection, int toDirection)
+    void PlaceCornerWire(Vector3Int position, int fromDirection, int toDirection)//Позиция, поворот до, поворот после
     {
-        if (fromDirection == 0 && toDirection == 90)
-        {
-            Spawn(tileMap, tile[1], position, 0);
-        }
-        else if (fromDirection == 90 && toDirection == 0)
-        {
-            Spawn(tileMap, tile[2], position, 180);
-        }
-        else if (fromDirection == 90 && toDirection == 180)
-        {
-            Spawn(tileMap, tile[1], position, 90);
-        }
-        else if (fromDirection == 180 && toDirection == 90)
-        {
-            Spawn(tileMap, tile[2], position, 270);
-        }
-        else if (fromDirection == 180 && toDirection == 270)
-        {
-            Spawn(tileMap, tile[1], position, 180);
-        }
-        else if (fromDirection == 270 && toDirection == 180)
-        {
-            Spawn(tileMap, tile[2], position, 0);
-        }
-        else if (fromDirection == 270 && toDirection == 0)
-        {
-            Spawn(tileMap, tile[1], position, 270);
-        }
-        else if (fromDirection == 0 && toDirection == 270)
-        {
-            Spawn(tileMap, tile[2], position, 90);
+        if(tileMap.GetTile(position) == tile[0]) {
+            if (fromDirection == 0 && toDirection == 90)
+            {
+                Spawn(tileMap, tile[1], position, 0);
+            }
+            else if (fromDirection == 90 && toDirection == 0)
+            {
+                Spawn(tileMap, tile[2], position, 180);
+            }
+            else if (fromDirection == 90 && toDirection == 180)
+            {
+                Spawn(tileMap, tile[1], position, 90);
+            }
+            else if (fromDirection == 180 && toDirection == 90)
+            {
+                Spawn(tileMap, tile[2], position, 270);
+            }
+            else if (fromDirection == 180 && toDirection == 270)
+            {
+                Spawn(tileMap, tile[1], position, 180);
+            }
+            else if (fromDirection == 270 && toDirection == 180)
+            {
+                Spawn(tileMap, tile[2], position, 0);
+            }
+            else if (fromDirection == 270 && toDirection == 0)
+            {
+                Spawn(tileMap, tile[1], position, 270);
+            }
+            else if (fromDirection == 0 && toDirection == 270)
+            {
+                Spawn(tileMap, tile[2], position, 90);
+            }
         }
     }
 
@@ -317,7 +318,8 @@ public class WireSpawn : MonoBehaviour
     public void Spawn(Tilemap map, Tile tile, Vector3Int position, int Degre)
     {
         map.SetTile(position, null);
-        place.PlaceTileAtMousePosition(position, tile, tileMap);
+        
+        place.PlaceTileAtMousePosition(position, tile, map);
         Matrix4x4 matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.Euler(0f, 0f, Degre), Vector3.one);
         map.SetTransformMatrix(position, matrix);
     }
