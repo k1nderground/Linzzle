@@ -3450,6 +3450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
   ps: {fileID: 1529623387}
+  levelManager: {fileID: 1529623388}
   DialogueBox: {fileID: 113217119}
   LensImage: {fileID: 675438187}
   startDi:
@@ -4927,6 +4928,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f190eab5b05af4067a6def7a57ed0bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &1529623388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2689681970273647067, guid: 22af3496159ce478d878d79ec7175e9a, type: 3}
+  m_PrefabInstance: {fileID: 481816645}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140c2efe40f4407c9ff78f063fde247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
 --- !u!1 &1540351222
 GameObject:
   m_ObjectHideFlags: 0
