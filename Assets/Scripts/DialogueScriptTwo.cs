@@ -141,18 +141,20 @@ public class DialogueScriptTwo : MonoBehaviour
     }
 
     void EndDialogue()
+{
+    isDialogueActive = false;
+    DialogueBox.SetActive(false);
+
+    if (hasWinPlayed)
     {
-        isDialogueActive = false;
-        DialogueBox.SetActive(false);
-        if (ps.isWin)
-        {
-            levelManager.nextLevel();
-        }
-        if (ps.isLose)
-        {
-            levelManager.restartLevel();
-        }
+        levelManager.nextLevel();
     }
+    else if (hasLosePlayed)
+    {
+        levelManager.restartLevel();
+    }
+}
+
 
     Sprite GetSprite(string emotion)
 {
