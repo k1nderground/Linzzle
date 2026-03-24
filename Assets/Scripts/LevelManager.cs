@@ -13,19 +13,26 @@ public class LevelManager : MonoBehaviour
         BeautyLevel = "Уровень "+curlevel;
     }
 
-    public void nextLevel()
+public void nextLevel()
+{
+    Debug.Log("NEXT LEVEL CALLED");
+
+    curlevel++;
+    CurrentLevel = "Level_" + curlevel;
+
+    Debug.Log("Trying to load: " + CurrentLevel);
+
+    if (Application.CanStreamedLevelBeLoaded(CurrentLevel))
     {
-        curlevel++;
-        CurrentLevel = "Level_"+curlevel;
-        if (SceneUtility.GetBuildIndexByScenePath(CurrentLevel) != -1)
-        {
+        Debug.Log("Scene exists, loading...");
         SceneManager.LoadScene(CurrentLevel);
-        }
-        else
-        {
-        SceneManager.LoadScene("MainMenu");
-        }
     }
+    else
+    {
+        Debug.Log("Scene NOT found, loading menu");
+        SceneManager.LoadScene("MainMenu");
+    }
+}
 
     public void restartLevel()
     {
