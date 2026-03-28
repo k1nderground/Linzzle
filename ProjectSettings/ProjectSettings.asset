@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: SVASTONGAMES
   productName: Linzzle
-  defaultCursor: {fileID: 2800000, guid: dcbf8084df17a4c3983205756b8c813f, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 9159365ae6527f44eb40433053a26369, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -114,6 +114,7 @@ PlayerSettings:
   xboxEnableGuest: 0
   xboxEnablePIXSampling: 0
   metalFramebufferOnly: 0
+  metalUseMetalDisplayLink: 0
   xboxOneResolution: 0
   xboxOneSResolution: 0
   xboxOneXResolution: 3
